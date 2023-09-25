@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  font-size: 24px;
+  margin: 0;
+  height: 100%;
+}
+
+.blurred-background {
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+img {
+  background-image: url(01.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.welcome {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  color: #FFFFFF;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}

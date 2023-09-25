@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+  </head>
+
+  <script>
+    window.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        document.querySelector(".welcome").style.opacity = 0;
+        document.querySelector(".blurred-background").style.opacity = 0;
+      }
+    });
+  </script>
+
+  <body>
+    <img src="./01.jpg" alt="">
+    <div class="blurred-background"><img src="./01.jpg" alt=""></div>
+    <div class="welcome">
+      <h1>Welcome</h1>
+      <p>Press enter to continue...</p>
+    </div>
+  </body>
+</html>
